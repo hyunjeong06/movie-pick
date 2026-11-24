@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>호러 영화 추천</title>
+  <link rel="stylesheet" href="3style.css">
+</head>
+
+<body>
+
+<!-- 로그인/회원가입 토글 -->
+<input type="checkbox" id="login-toggle">
+<input type="checkbox" id="join-toggle">
+
+<header>
+  <h1> 호러 영화 추천</h1>
+</header>
+
+<nav>
+  <a href="3index.html">전체</a>
+  <a href="horror3.html">공포</a>
+  <a href="romance3.html">로맨스</a>
+
+  <!-- 추가 -->
+  <label for="login-toggle">로그인</label>
+  <label for="join-toggle">회원가입</label>
+</nav>
+
+<!-- 로그인 -->
+<div class="modal-overlay login-modal">
+
+  <div class="modal-content">
+
+    <label for="login-toggle" class="close-btn">&times;</label>
+
+    <h2>로그인</h2>
+
+    <input type="text" id="loginId" placeholder="아이디">
+
+    <input type="password" id="loginPw" placeholder="비밀번호">
+
+    <button class="submit-btn" onclick="loginCheck()">
+      로그인
+    </button>
+
+    <p id="loginMsg"></p>
+
+  </div>
+
+</div>
+
+<!-- 회원가입 -->
+<div class="modal-overlay join-modal">
+
+  <div class="modal-content">
+
+    <label for="join-toggle" class="close-btn">&times;</label>
+
+    <h2>회원가입</h2>
+
+    <input type="text" id="joinId" placeholder="아이디">
+
+    <input type="password" id="joinPw" placeholder="비밀번호">
+
+    <input type="email" id="joinEmail" placeholder="이메일">
+
+    <button class="submit-btn" onclick="joinCheck()">
+      가입하기
+    </button>
+
+    <p id="joinMsg"></p>
+
+  </div>
+
+</div>
+
+<div class="container">
+
+  <div class="movie">
+
+    <img src="https://i.namu.wiki/i/Ie5Yo9eoJSiQFAPBizSnpmqHyKuA66fBC_yrp5Vqo4VPHlIjOdifcMPr2RrW0sMlo3IOlM99P-g01lKrz20oTEGGFpcfR-kg_Oi6CFeR9bJhZQOO-tlB-NHOPpdUXkrmOSsCyXHR2_TBBzpvvJY-SA.webp">
+
+    <div class="movie-content">
+
+      <h3>살목지</h3>
+
+      <p>
+        대한민국의 공포 영화.
+        낚시 스폿 겸 심령스폿으로 유명한 저수지 살목지의 심야괴담회 실화 경험담 등 괴담들을 배경으로 한 작품이다.
+      </p>
+
+      <button class="like-btn" onclick="likeMovie(this)">
+        좋아요
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="3script.js"></script>
+</body>
+</html>

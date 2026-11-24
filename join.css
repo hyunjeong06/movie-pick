@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, sans-serif;
+
+  background-color: black
+  ;
+
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-container {
+  width: 400px;
+
+  background-color: white;
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  text-align: center;
+}
+
+.logo {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.join-container h1 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.sub-text {
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.input-box {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.input-box label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-weight: bold;
+  color: #333;
+}
+
+.input-box input {
+  width: 100%;
+
+  padding: 13px;
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  box-sizing: border-box;
+
+  transition: 0.3s;
+}
+
+.input-box input:focus {
+  border-color: #2a5298;
+
+  outline: none;
+
+  box-shadow: 0 0 8px rgba(42, 82, 152, 0.3);
+}
+
+.join-btn {
+  width: 100%;
+
+  padding: 14px;
+
+  background-color: #2a5298;
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.join-btn:hover {
+  background-color: #1e3c72;
+}
+
+#joinMsg {
+  margin-top: 20px;
+
+  font-weight: bold;
+}

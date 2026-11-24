@@ -1,0 +1,139 @@
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "맑은 고딕";
+}
+
+body {
+
+  height: 100vh;
+
+  background:
+  linear-gradient(rgba(0,0,0,0.6),
+  rgba(0,0,0,0.6)),
+
+  url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1200");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+
+  width: 380px;
+
+  background: rgba(255,255,255,0.1);
+
+  backdrop-filter: blur(10px);
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+
+  color: white;
+}
+
+.login-box h1 {
+
+  text-align: center;
+
+  margin-bottom: 10px;
+
+  font-size: 32px;
+}
+
+.sub-text {
+
+  text-align: center;
+
+  margin-bottom: 30px;
+
+  color: #ddd;
+
+  font-size: 14px;
+}
+
+.input-box {
+
+  margin-bottom: 20px;
+}
+
+.input-box label {
+
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 14px;
+}
+
+.input-box input {
+
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  font-size: 15px;
+}
+
+.option-box {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+
+  font-size: 13px;
+}
+
+.login-btn {
+
+  width: 100%;
+
+  padding: 13px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: crimson;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+
+  background: rgb(177, 10, 43);
+}
+
+#loginMsg {
+
+  text-align: center;
+
+  margin-top: 15px;
+
+  font-size: 14px;
+}

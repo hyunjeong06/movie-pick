@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>영화 추천 사이트</title>
+
+  <link rel="stylesheet" href="3style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1> 영화 추천 사이트</h1>
+  </header>
+
+  <nav>
+    <a href="3index.html">전체</a>
+    <a href="horror3.html">공포</a>
+    <a href="romance3.html">로맨스</a>
+
+    <button onclick="openLogin()">로그인</button>
+    <button onclick="openJoin()">회원가입</button>
+  </nav>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="영화를 검색하세요">
+  </div>
+
+  <div class="container">
+
+    <h2> 실시간 인기 영화</h2>
+
+    <div class="movie">
+
+      <img
+        src="https://i.namu.wiki/i/pc0YfcIqsz2hCnUgodVrQmD9MKT3IwFkwrx4bMoHAidnXfxeeoTmLl7Q1eadxJjwSu3a_RCACRGAzO88SMQaUf3m7XnlxdhdemerpeFIrXomBOVa7FEmbGznetpg_89iRki-z7HVotIViAylc77fJw.webp"
+        alt="군체">
+
+      <div class="movie-content">
+
+        <h3>군체</h3>
+
+        <p>
+          정체불명의 감염 사태로 봉쇄된 건물 안, 고립된 생존자들이 예측할 수 없는 형태로 진화하는 감염자들에 맞서 벌이는 사투를 그린 영화
+        </p>
+
+        <button class="like-btn" onclick="likeMovie(this)">
+          좋아요
+        </button>
+
+      </div>
+
+    </div>
+
+    <aside class="ad-banner">
+
+      <p>
+        <strong>이벤트:</strong>
+        지금 가입하면 첫 예매권 50% 할인!
+      </p>
+
+    </aside>
+
+    <section class="top-movie">
+
+    </section>
+
+  </div>
+
+  <script src="3script.js"></script>
+
+</body>
+
+</html>
